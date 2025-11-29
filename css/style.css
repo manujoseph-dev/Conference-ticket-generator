@@ -33,7 +33,7 @@ body {
 
 .hero-image {
     position: absolute;
-    background-image: url("/assets/images/background-desktop.png");
+    background-image: url("./assets/images/background-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -43,7 +43,7 @@ body {
 
 .pattern-line {
     position: absolute;
-    background-image: url("/assets/images/pattern-lines.svg");
+    background-image: url("./assets/images/pattern-lines.svg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -496,4 +496,5 @@ body {
     .contest-id{
         right: 4%;
     }
+
 }
