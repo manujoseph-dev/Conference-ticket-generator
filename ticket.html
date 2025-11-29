@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Conference ticket generator</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <main>
+    <div class="hero-image"></div>
+    <div class="pattern-line"></div>
+    <div class="pattern-circle1">
+      <img src="/assets/images/pattern-circle.svg" alt="pattern-circle">
+    </div>
+    <div class="pattern-circle2 page2-circle2">
+      <img src="/assets/images/pattern-circle.svg" alt="pattern-circle">
+    </div>
+    <div class="pattern-squiggly-line-bottom">
+      <img src="/assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="pattern-squiggly-line">
+    </div>
+    <div class="pattern-squiggly-line-top">
+      <img src="/assets/images/pattern-squiggly-line-top.svg" alt="pattern-squiggly-line">
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="./assets/images/logo-full.svg" alt="" />
+        </div>
+        <div class="heading heading-page2">
+          <h1>Congrats, <span class="username-header"><!-- username --></span>!<br>Your ticket is ready.</h1>
+          <p> We've emailed your ticket to <span class="userEmail-header"><!-- userEmail --></span> and will send updates in
+            the run up to the event.</p>
+        </div>
+
+        <div class="ticket">
+          <img src="./assets/images/pattern-ticket.svg" alt="image of ticket">
+          <!-- info section -->
+          <div class="info">
+            <div class="title">
+              <img src="./assets/images/logo-mark.svg" alt="logo">
+              <h2>Coding Conf</h2>
+            </div>
+            <p class="location"><span class="monthDate"></span> / Austin, TX</p>
+          </div>
+          <!-- profile -->
+           <div class="profile">
+            <img class="profile-img" src="" alt="avatar">
+            <div class="user-info">
+              <h2 class="username"></h2>
+              <div>
+                <img src="./assets/images/icon-github.svg" alt="github icon">
+              <p class="github-username"></p>
+              </div>
+            </div>
+           </div>
+
+            <h2 class="contest-id"></h2>
+        </div>
+      </div>
+    </header>
+  </main>
+  <script src="js/ticket.js"></script>
+</body>
+
+</html>

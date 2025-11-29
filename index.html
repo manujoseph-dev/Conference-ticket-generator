@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Conference ticket generator</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <main>
+    <div class="hero-image"></div>
+    <div class="pattern-line"></div>
+    <div class="pattern-circle1">
+      <img src="/assets/images/pattern-circle.svg" alt="pattern-circle">
+    </div>
+    <div class="pattern-circle2">
+      <img src="/assets/images/pattern-circle.svg" alt="pattern-circle">
+    </div>
+    <div class="pattern-squiggly-line-bottom">
+      <img src="/assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="pattern-squiggly-line">
+    </div>
+    <div class="pattern-squiggly-line-top">
+      <img src="/assets/images/pattern-squiggly-line-top.svg" alt="pattern-squiggly-line">
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="./assets/images/logo-full.svg" alt="" />
+        </div>
+        <div class="heading">
+          <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+          <p>Secure your spot at next year's biggest coding conference.</p>
+        </div>
+
+        <div class="form-container">
+          <form action="/" class="form">
+            <label class="caption" for="upload-avatar">Upload Avatar</label>
+            <div class="drop-box">
+              <div class="image">
+                <img class="upload-img" src="./assets/images/icon-upload.svg" alt="upload image" />
+              </div>
+              <input type="file" class="files" id="images" style="display: none" accept="image/png, image/jpeg" />
+              <p class="info">Drag and drop or click to upload</p>
+              <div class="edit hidden">
+                <button class="btn remove-img" novalidate>
+                  Remove image
+                </button>
+                <button class="btn change-img">Change image</button>
+              </div>
+            </div>
+
+            <p id="file-error">
+              <img src="./assets/images/icon-info.svg" alt="icon-info" />
+              Upload your photo (JPG or PNG, max size: 500KB).
+            </p>
+
+            <div class="userInputCon">
+              <p>Full Name</p>
+              <input type="text" name="fullname" class="userInput" />
+               <div class="error err-fullname">
+                <img src="./assets/images/icon-info.svg" alt="icon-info" />
+                Please enter your full name.
+              </div> 
+            </div>
+
+            <div class="userInputCon">
+              <p>Email Address</p>
+              <input type="text" name="email" class="userInput" placeholder="example@gmail.com" />
+              <div class="error err-email">
+                <img src="./assets/images/icon-info.svg" alt="icon-info" />
+                Please enter a valid email address.
+              </div> 
+            </div>
+
+            <div class="userInputCon">
+              <p>GitHub Username</p>
+              <input type="text" name="githubUserName" class="userInput" placeholder="@yourusername" />
+              <div class="error err-github">
+                <img src="./assets/images/icon-info.svg" alt="icon-info" />
+                please enter your github username.
+              </div> 
+            </div>
+
+            <div class="ticket-btn">
+              <button class="submit-btn">Generate My Ticket </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
