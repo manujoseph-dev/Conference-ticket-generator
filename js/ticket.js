@@ -41,11 +41,6 @@ if (profileImage) {
 // generate secreat id
 const random5 = Math.floor(10000 + Math.random() * 90000);
 contestId.textContent = `#${random5}`;
-
-      localStorage.removeItem(fullName);
-      localStorage.removeItem(email);
-      localStorage.removeItem(github);
-      localStorage.removeItem(userProfile);
 // Insert month and year 
 
 // get month
@@ -54,3 +49,9 @@ let month = months[dateObj.getMonth()];
 const year = dateObj.getFullYear();
 
 monthDate.textContent = `${month} 27, ${year}`;
+
+      localStorage.removeItem(fullName);
+      localStorage.removeItem(email);
+      localStorage.removeItem(github);
+      localStorage.removeItem(userProfile);
+
